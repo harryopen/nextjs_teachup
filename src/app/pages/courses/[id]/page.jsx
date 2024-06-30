@@ -1,32 +1,29 @@
-import React from 'react'
-import all_courses from '@/app/assets/all_courses'
-import Items from '@/components/item/Items';
-import { HeroHighlight } from '@/components/ui/hero-highlight';
-import {useSelector} from 'react-redux';
-function page({params}) {
+"use client";
+import React, { useState } from "react";
+import all_courses from "@/app/assets/all_courses";
+import Items from "@/components/item/Items";
+import { HeroHighlight } from "@/components/ui/hero-highlight";
+import CourseSidebar from "@/components/sidebar/courseSidebar";
+import Rightbar from "@/components/sidebar/RightBar";
+function page({ params }) {
   const Id = params.id;
-  const product       =   all_courses.find((e)=> e.key === Number(Id))
- 
+  const product = all_courses.find((e) => e.key === Number(Id));
+  const [selectedChapter, setSelectedChapter] = useState(null);
+
   return (
     <div>
-    
+      <div className="main flex flex-1 ">
+        <div className="  sticky top-0 h-sreen w-64 bg-gray-800 text-white">
+          <CourseSidebar
+            chapters={product.chapter}
+            onChapterSelect={setSelectedChapter}
+          />
+        </div>
 
-      <HeroHighlight >
-      
-     <div className=' mt-40 '>
-
-      <Items  
-       key={product.key}
-       id={product.key}
-       name={product.name}
-       desc={product.desc} 
-       image={product.img}
-      />
+        <Rightbar chapter={selectedChapter} />
       </div>
-
-</HeroHighlight>
     </div>
-  )
+  );
 }
 
-export default page
+export default page;

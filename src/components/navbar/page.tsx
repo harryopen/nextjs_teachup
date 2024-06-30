@@ -16,11 +16,11 @@ const Navbar: React.FC<{ className?: string }> = ({ className }) =>{
         <MenuItem setActive={setActive} active={active} item="" />
         <MenuItem  setActive={setActive} active={active} item="Explore -> ">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink  href="" ><span className="text-[#5e5ecd]"> <Link  href={`/pages/allcourses/${"math"}`}> Maths</Link></span> 
+            <HoveredLink  href="" ><span className="text-[#5e5ecd]"> <Link  href={`/pages/allcourses/${"Maths"}`}> Maths</Link></span> 
             
             </HoveredLink>
             <HoveredLink href="/interface-design"  category="programming"> <Link  href={`/pages/allcourses/${"programming"}`}>Programming</Link></HoveredLink>
-            <HoveredLink href="/seo"  category="science"> <Link  href={`/pages/allcourses/${"computer_scince"}`}>Computer Science</Link> </HoveredLink>
+            <HoveredLink href="/seo"  category="science"> <Link  href={`/pages/allcourses/${"computer_science"}`}>Computer Science</Link> </HoveredLink>
             <HoveredLink href="/branding" category="devolpment"> <Link  href={`/pages/allcourses/${"Devolpment"}`}>Devolpment</Link></HoveredLink>
           </div>
         </MenuItem>
