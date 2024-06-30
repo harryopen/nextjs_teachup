@@ -1,0 +1,105 @@
+
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "Introduction to Programming",
+        "slug": "introduction-to-programming",
+        "description": "Learn the basics of programming with our comprehensive beginner's course.",
+        "price": 99.99,
+        "instructor": "Harpreet singh ",
+        "isFeatured": true,
+        "image": "/courses/programming.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Complete Calculus",
+        "slug": "calculus-i",
+        "description": "Start your mathematical journey with foundational calculus skills taught by expert instructors.",
+        "price": 109.99,
+        "instructor": "Harpreet singh",
+        "isFeatured": true,
+        "image": "/courses/calculus.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Advanced Data Structures",
+        "slug": "advanced-data-structures",
+        "description": "Enhance your programming skills with advanced data structures for intermediate to advanced learners.",
+        "price": 119.99,
+        "instructor": "Cathy Brown",
+        "isFeatured": false,
+        "image": "/courses/data-structures.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Algebra",
+        "slug": "discrete-mathematics",
+        "description": "Mathematics with our comprehensive course covering all skill levels.",
+        "price": 129.99,
+        "instructor": "Harpreet singh",
+        "isFeatured": true,
+        "image": "/courses/discrete-math.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Linear Algebra",
+        "slug": "linear-algebra",
+        "description": "Learn the fundamentals of linear algebra with this course designed for all levels.",
+        "price": 139.99,
+        "instructor": "Eva Green",
+        "isFeatured": false,
+        "image": "/courses/linear-algebra.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Geometry",
+        "slug": "machine-learning-basics",
+        "description": "Dive into geometry  with this introductory course on the basics of algorithms and models.",
+        "price": 149.99,
+        "instructor": "Hapreet singh ",
+        "isFeatured": true,
+        "image": "/courses/machine-learning.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Probability and Statistics",
+        "slug": "probability-and-statistics",
+        "description": "Learn the essentials of probability and statistics to enhance your data analysis skills.",
+        "price": 159.99,
+        "instructor": "Grace Kim",
+        "isFeatured": false,
+        "image": "/courses/probability.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Web Development",
+        "slug": "web-development",
+        "description": "Create compelling websites with our course designed for beginners to advanced users.",
+        "price": 169.99,
+        "instructor": "Henry Martinez",
+        "isFeatured": true,
+        "image": "/courses/web-development.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Mathematical Logic",
+        "slug": "mathematical-logic",
+        "description": "Explore the foundations of mathematical logic from its origins to the present day.",
+        "price": 179.99,
+        "instructor": "Ivy Walker",
+        "isFeatured": false,
+        "image": "/courses/math-logic.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Frontend  Design",
+        "slug": "algorithm-design",
+        "description": "Discover the techniques of algorithm design to solve complex computational problems.",
+        "price": 189.99,
+        "instructor": "Harpreet singh ",
+        "isFeatured": true,
+        "image": "/courses/algorithm-design.jpg"
+      }
+    ]
+  }
