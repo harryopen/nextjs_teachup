@@ -1,9 +1,9 @@
 import React from "react";
 
 function CourseSidebar({ chapters,onChapterSelect }) {
-
+  console.log("The value of chapters is",chapters) ;
   return (
-    <div className="bg-gray-800 text-white h-screen w-64 flex flex-col">
+    <div className="mt- bg-gray-800 text-white h-auto w-64 flex flex-col">
     <div className="p-4">
          
       {chapters &&

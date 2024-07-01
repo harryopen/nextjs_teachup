@@ -8,7 +8,7 @@ import Rightbar from "@/components/sidebar/RightBar";
 function page({ params }) {
   const Id = params.id;
   const product = all_courses.find((e) => e.key === Number(Id));
-  const [selectedChapter, setSelectedChapter] = useState(null);
+  const [selectedChapter, setSelectedChapter] = useState(product.chapter);
 
   return (
     <div>
