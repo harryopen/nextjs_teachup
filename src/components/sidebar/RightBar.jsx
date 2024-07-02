@@ -2,7 +2,7 @@ import React from 'react';
 import { HeroHighlight } from '../ui/hero-highlight';
 
 function RightBar({ chapter }) {
-   
+    console.log("the value inchapter ",chapter);
   if (!chapter) {
     return <p className='text-black'>Please select a chapter.</p>;
   }

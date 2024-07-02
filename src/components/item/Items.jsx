@@ -38,7 +38,10 @@ function Items(props) {
           target="__blank"
           className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
-          $  {props.new_price} 50% off
+          $  {props.new_price} 50% off 
+          <button  onClick={}
+           className=" ml-5 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+        >Add to dashboard</button>
         </CardItem>
         <CardItem
           
