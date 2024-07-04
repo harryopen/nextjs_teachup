@@ -1,16 +1,13 @@
-'use client'
+'use client';
 import Items from "@/components/item/Items";
+
 import { useSelector } from "react-redux";
 function  Category({params}) {
     const {category} = params;
     const courses = useSelector((state) => state.courses.courses);
-  
     const filteredCourses = courses.filter(course => course.name === category);
-  
 
   return (
-    <>
-    
    <div className="popular flex flex-col items-center gap-3 h-auto ">
       <h1 className=" text-5xl">
         List of courses for {category}
@@ -23,7 +20,7 @@ function  Category({params}) {
             key={item.key}
             id={item.key}
             name={item.name}
-            desc={item.desc} 
+            desc={item.desc}
             image={item.img}
             new_price={item.new_price}
             old_price={item.old_price}
@@ -32,8 +29,6 @@ function  Category({params}) {
         })}
       </div>
     </div>
-   
-    </>
   )
 }
 

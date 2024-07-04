@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
+
 import all_courses from "@/app/assets/all_courses";
-import Items from "@/components/item/Items";
-import { HeroHighlight } from "@/components/ui/hero-highlight";
 import CourseSidebar from "@/components/sidebar/courseSidebar";
 import Rightbar from "@/components/sidebar/RightBar";
+
 function page({ params }) {
   const Id = params.id;
   const product = all_courses.find((e) => e.key === Number(Id));
@@ -19,7 +19,6 @@ function page({ params }) {
             onChapterSelect={setSelectedChapter}
           />
         </div>
-
         <Rightbar chapter={selectedChapter} />
       </div>
     </div>

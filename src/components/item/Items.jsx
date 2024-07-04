@@ -1,9 +1,17 @@
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Link from "next/link";
 import Image from "next/image";
+import { useDispatch } from "react-redux";
+import { addToDashboard } from "@/redux/slices/cartSlice";
+import toast from "react-hot-toast";
+
 
 function Items(props) {
-    
+  const dispatch =useDispatch();
+    function  addToDash(){
+      dispatch(addToDashboard(props));
+      toast.success('Successfully toasted!')
+    }
   return (
     <>
     
@@ -39,7 +47,7 @@ function Items(props) {
           className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
         >
           $  {props.new_price} 50% off 
-          <button  onClick={}
+          <button  onClick={()=>addToDash()}
            className=" ml-5 px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
         >Add to dashboard</button>
         </CardItem>

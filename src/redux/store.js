@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import coursesReducer from "./slices/cartSlice";
+import { coursesReducer, dashboardReducer } from "./slices/cartSlice";
+
 const store = configureStore({
   reducer: {
     courses: coursesReducer,
+    dashboard: dashboardReducer,
   },
 });
 

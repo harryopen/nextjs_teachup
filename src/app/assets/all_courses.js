@@ -4,10 +4,7 @@ import p3 from "./images/python.jpg";
 import p4 from "./images/webiste.jpg";
 
 import class8 from "./Maths/maths8";
-import class9 from "./Maths/maths9";
-import class10 from "./Maths/maths10";
-import class11 from "./Maths/maths11";
-import class12 from "./Maths/maths9";
+
 const all_courses = [
   {
     key: 1,
@@ -104,4 +101,5 @@ const all_courses = [
     chapter: class8,
   },
 ];
+
 export default all_courses;
